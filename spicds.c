@@ -251,8 +251,7 @@ spicds_set(struct spicds_info *codec, int dir, unsigned int left, unsigned int r
 			left = left * 127 / 100;
 		}
 	if (right >= 100)
-		if ((codec->type == SPICDS_TYPE_AK4381) || \
-		(codec->type == SPICDS_TYPE_AK4396))
+		if ((codec->type == SPICDS_TYPE_CS42L43)
                         right = right * 127 / 100;
 			//break;
 	else
